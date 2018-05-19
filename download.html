@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title></title>
+    <link href="css/h5css.css" rel="stylesheet">
+     <script type="text/javascript" src="js/jquery/jquery-1.7.2.min.js">
+     	
+     </script>
+    <script>
+      $(document).ready(function(){
+     $(".download-btn").click(function() {
+
+     	 $('.download-btn').attr('href',"url地址") 
+  	$.ajax({  
+  	  data:{platform:'Android',version:'1.3.2',app_type:'member'},
+       type: "get", 
+       url: '192.168.1.254/tp5/public/index.php/api/system/appVersion',  
+       dataType: "json",  
+       success: function(data) {
+       console.loge(1)
+              
+       }
+
+     	
+     	
+     } )
+     	
+     } )
+  
+ });
+    	
+    </script>
+</head>
+
+<body style="background: #f7b1bf; ">
+
+    <div class="download-bg">
+        <div class="download-logo"><img alt="logo" src="images/download-logo.png" /></div>
+        <div class="download-mobile"><img alt="mobile" src="images/download-mobile.png" /></div>
+        <a href="#" title="安卓下载" class="download-btn"><img alt="android" src="images/download-android.png" /></a>
+        <a href="#" title="苹果下载" class="download-btn"><img alt="iphone" src="images/download-iphone.png" /></a>
+    </div>
+
+
+</body>
+</html>
+    
